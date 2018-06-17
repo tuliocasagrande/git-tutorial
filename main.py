@@ -1,8 +1,10 @@
 def multiply(a, b):
+    """Return a * b."""
     return a * b
 
 
 def divide(a, b):
+    """Return a / b."""
     if b == 0:
         return 'division by zero!'
     return a / b
