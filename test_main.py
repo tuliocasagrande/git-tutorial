@@ -12,7 +12,8 @@ class TestMathMethods(unittest.TestCase):
         self.assertEqual(3, main.divide(6, 2))
 
     def test_divide_by_zero(self):
-        self.assertEqual('division by zero!', main.divide(6, 0))
+        with self.assertRaises(ZeroDivisionError):
+            main.divide(6, 0)
 
 
 if __name__ == '__main__':
